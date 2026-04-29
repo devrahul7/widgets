@@ -43,7 +43,7 @@ class _MainScreenViewState extends State<NumberGeneratorView> {
             const SizedBox(height: 20),
 
             const Text(
-              "Choose the Larger Number",
+              "Choose the Largest Number",
               style: TextStyle(fontSize: 18),
             ),
 
@@ -90,11 +90,21 @@ class _MainScreenViewState extends State<NumberGeneratorView> {
 
             const SizedBox(height: 30),
 
-            if (_model.gameOver)
+            // Display result and restart button when game is over
+            if (_model.gameOver) ...[
+              Text(
+                _model.getResultMessage(),
+                style: const TextStyle(
+                  fontSize: 22, 
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: _restartGame,
                 child: const Text("Restart"),
               ),
+            ],
           ],
         ),
       ),
