@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/views/column_button_view.dart';
+import 'package:widgets/views/container_view.dart';
+import 'package:widgets/views/image_view.dart';
 import 'package:widgets/views/list_tile_view.dart';
 // import 'package:widgets/views/column_view.dart';
 // import 'package:widgets/views/number_generator_view.dart';
@@ -12,7 +14,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: ListTileView(),
+      home: ImageView(),
     );
   }
 }
