@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/app.dart';
 
 class ColumnView extends StatelessWidget {
   const ColumnView({super.key});
