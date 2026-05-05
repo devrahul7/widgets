@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/views/flexible_expanded_view.dart';
-import 'package:widgets/views/image_view.dart';
+import 'package:widgets/views/column_view2.dart';
+// import 'package:widgets/views/column_view2.dart';
+// import 'package:widgets/views/flexible_expanded_view.dart';
 // import 'package:widgets/views/column_view.dart';
 // import 'package:widgets/views/number_generator_view.dart';
 // import 'package:widgets/views/rich_text_view.dart';
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false, 
-      home: FlexibleExpandedView(),
+      home: ColumnView2(),
     );
   }
 }

@@ -19,10 +19,12 @@ class FlexibleExpandedView extends StatelessWidget {
             )
            ),
 
-           Expanded(child: Container(
-            color: Colors.green,
+          
+           
+           Flexible(
+            child: Container(
+                   color: Colors.red,
             child: Center(child: Text("Hello from Container 2")),
-            
             
            ))
         ],
